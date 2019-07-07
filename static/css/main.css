@@ -1,7 +1,32 @@
 html, body {
     height: 100%;
+    background: url('/static/images/background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/** HEADERS **/
+
+.main_header {
+    color: white;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(100%);
+    font-size: 1.5em;
+    line-height: 1.8em;
+    margin-left: 10%;
+}
+
+.main_header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/** NAV BAR **/
 #navbar-primary .navbar-nav {
     width: 100%;
     text-align: center;
@@ -15,16 +40,36 @@ html, body {
 #navbar-primary .navbar-nav > li > a {
     padding-left: 30px;
     padding-right: 30px;
+    color: #00CCEF;
+    font-family: Audrey;
 }
-  
+
+.navbar-nav:first-child {
+    padding: 0;
+    margin: 0;
+}
+
 #navbar {
     width: 100%;
     float: left;
     background-color: white;
 }
 
+.navbar {
+    float: left;
+    margin-bottom: 0.1em;
+    font-size: 1.75em;
+}
+
+/** Footer **/
+
+footer {
+    color: white;
+    text-align: center;
+}
+
 /** Stick footer to bottom of page **/
-  .page-wrap {
+.page-wrap {
     min-height: 100%;
     margin-bottom: -7.5vh;
   }
@@ -37,18 +82,6 @@ html, body {
   .site-footer, .page-wrap:after {
     height: 7.5vh;
   }
-
-/** Footer **/
-
-footer {
-    background: #16222A;
-    background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
-    background: linear-gradient(59deg, #3A6073, #16222A);
-    color: white;
-    text-align: center;
-}
-
-/*SOCİAL İCONS*/
 
 /* footer social icons */
 
@@ -135,5 +168,19 @@ ul.social-network {
 .col-md-3 {
     width: 100%;
     margin-top: 1%;
+}
+
+/** FONTS **/
+
+@font-face {
+    font-family: Audrey;
+    src: url(/static/fonts/Audrey/Audrey-Normal.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Audrey;
+    src: url(/static/fonts/Audrey/Audrey-Bold.otf);
+    font-weight: bold;
 }
   
