@@ -16,7 +16,7 @@ func renderTemplate(w http.ResponseWriter, templateFile string, templateData int
 	t.Execute(w, templateData)
 }
 
-func BasicsHandler() http.Handler {
+func MainHandler() http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		renderTemplate(w, "./templates/index.html", nil)
 	})
@@ -24,7 +24,7 @@ func BasicsHandler() http.Handler {
 
 func main() {
     r := mux.NewRouter()
-    r.Handle("/", BasicsHandler()).Methods("GET")
+    r.Handle("/", MainHandler()).Methods("GET")
 
     fs := http.FileServer(http.Dir("./static"))
     http.Handle("/", r)
