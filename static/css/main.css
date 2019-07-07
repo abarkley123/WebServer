@@ -5,7 +5,7 @@ html, body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Giveny;
 }
 
 /** HEADERS **/
@@ -29,6 +29,7 @@ html, body {
 /** NAV BAR **/
 #navbar-primary .navbar-nav {
     width: 100%;
+    margin: 2.5%;
     text-align: center;
   }
 
@@ -40,8 +41,17 @@ html, body {
 #navbar-primary .navbar-nav > li > a {
     padding-left: 30px;
     padding-right: 30px;
-    color: #00CCEF;
+    color: #212121;
     font-family: Audrey;
+}
+
+.link:hover {
+    padding-left: 28px;
+    padding-right: 28px;
+    color:rgb(183, 244, 255);
+    background-color: white;
+    border: 2px solid rgb(183, 244, 255);
+    border-radius: 2px;
 }
 
 .navbar-nav:first-child {
@@ -57,7 +67,7 @@ html, body {
 
 .navbar {
     float: left;
-    margin-bottom: 0.1em;
+    margin: 0;
     font-size: 1.75em;
 }
 
@@ -184,3 +194,8 @@ ul.social-network {
     font-weight: bold;
 }
   
+@font-face {
+    font-family: Giveny;
+    src: url(/static/fonts/Giveny.otf);
+    font-weight: normal;
+}
