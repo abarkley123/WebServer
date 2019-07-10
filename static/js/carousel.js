@@ -23,16 +23,16 @@ $('.owl-carousel').owlCarousel({
     }
   });
 
-    $('.popup-youtube, .popup-text').magnificPopup({
+$('.popup-youtube, .popup-text').magnificPopup({
       disableOn: 320,
       type: 'iframe',
       mainClass: 'mfp-fade',
       removalDelay: 160,
       preloader: false,
       fixedContentPos: true
-    });
-    
-    $('.popup-text').magnificPopup({
+});
+
+$('.popup-text').magnificPopup({
       type: 'inline',
       preloader: false,
       focus: '#name',
@@ -45,4 +45,4 @@ $('.owl-carousel').owlCarousel({
           }
         }
       }
-    });
+});
