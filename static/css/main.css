@@ -151,20 +151,20 @@ ul.social-network {
   .social-circle li a {
     display: inline-block;
     position: relative;
-    margin: 0 auto 0 auto;
+    margin: 0.25em auto 0 auto;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     text-align: center;
     width: 3em;
-    height: 30px;
-    font-size: 15px;
+    height: 3em;
+    font-size: 1em;
     background: transparent;
   }
 
   .social-circle li img {
     margin: 0;
-    line-height: 30px;
+    line-height: 3em;
     text-align: center;
   }
 
@@ -237,6 +237,7 @@ ul.social-network {
 
   .social-circle li a {
     width: 2em;
+    height: 2em;
   }
 }
 
