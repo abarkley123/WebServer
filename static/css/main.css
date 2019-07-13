@@ -26,29 +26,108 @@ html, body {
     font-size: 1.8em;
 }
 
+/** NAVIGATION DRAWER **/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  opacity: 0.95;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
 /** NAV BAR **/
+
 #navbar-primary .navbar-nav {
-    width: 100%;
-    margin: 2.5%;
-    text-align: center;
+  width: 100%;
+  margin: 2.5%;
+  text-align: center;
+}
+
+@media only screen and (max-height: 450px) {
+  .sidenav {padding-top:15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media only screen and (max-width: 750px) {
+  #navbar {
+    border-bottom: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.3);
   }
 
-  #navbar-primary .navbar-nav > li {
-    display: inline-block;
-    float: none;
+  .navbar {
+    padding-left: 0;
+  }
+
+  .navbar-header {
+    border-left: 2px solid rgb(183, 244, 255);
+    border-right: 2px solid rgb(183, 244, 255);
+    border-top: 1px dotted white;
+    border-bottom: 1px dotted white;
+    padding: 0 5px;
+  }
 }
-  
-#navbar-primary .navbar-nav > li > a {
-    padding-left: 30px;
-    padding-right: 30px;
+
+@media only screen and (min-width: 750px) {
+  #navbar-primary, #navbar-primary .navbar-nav {
+    display: inline;
+  }
+
+  .navbar-header {
+    display: none;
+  }
+
+  #navbar-primary-collapse {
+    display: block;
+    width: 100vw;
+  }
+
+  .navbar-nav li {
+    display: inline-block;
+  }
+
+  #navbar {
+    background-color: white;
+    border: none;
+    opacity: 0.9;
+  }
+}
+
+.navbar-nav > li > a {
+    padding: 30px;
     color: #212121;
     font-family: Audrey;
 }
 
 .link:hover {
-    padding-left: 28px;
-    padding-right: 28px;
-    color:rgb(183, 244, 255);
+    padding: 28px;
+    /* color:rgb(183, 244, 255); */
     background-color: white;
     border: 2px solid rgb(183, 244, 255);
     border-radius: 2px;
@@ -62,7 +141,6 @@ html, body {
 #navbar {
     width: 100%;
     float: left;
-    background-color: white;
 }
 
 .navbar {
@@ -109,25 +187,15 @@ ul.social-network {
   
   /* footer social icons */
   .social-network a.icoGithub:hover {
-    background-color: rgb(41, 155, 47);
+    background-color: #7DBBE6
   }
 
-  .social-network a.icoWordpress:hover {
-    background-color: rgb(233, 56, 65);
-  }
-  
   .social-network a.icoLinkedin:hover {
-    background-color: #007bb7;
+    background-color: #0077B5;
   }
   
-  .social-network a:hover i,
-  .social-network a:hover i {
-    color: #fff;
-  }
-  
-  .social-network a.socialIcon:hover,
-  .socialHoverClass {
-    color: #44BCDD;
+  .social-network a.icoWordpress:hover {
+    background-color: #21759B;
   }
   
   .social-circle li a {
@@ -141,15 +209,16 @@ ul.social-network {
     width: 30px;
     height: 30px;
     font-size: 15px;
+    background: transparent;
   }
   
-  .social-circle li i {
+  .social-circle li img {
     margin: 0;
     line-height: 30px;
     text-align: center;
   }
   
-  .social-circle li a:hover i,
+  .social-circle li a:hover img,
   .triggeredHover {
     -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
@@ -162,7 +231,7 @@ ul.social-network {
     transition: all 0.2s;
   }
   
-  .social-circle i {
+  .social-circle img {
     color: #595959;
     -webkit-transition: all 0.8s;
     -moz-transition: all 0.8s;
