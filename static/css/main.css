@@ -283,7 +283,6 @@ ul.social-network {
 @media only screen and (max-width: 600px) {
 
   .main_header {
-    font-size: 1.3em;
     margin-left: 5%;
     width: 80%;
     text-align: center;
@@ -291,7 +290,7 @@ ul.social-network {
   }
 
   .page-wrap {
-    margin-bottom: -7.5vh;
+    margin-bottom: -17.5vh;
   }
   
   strong {
