@@ -24,11 +24,11 @@ var WebAppRoot = "/Users/andrew/Desktop/git/go/src/github.com/WebServer";
 // 	t.Execute(w, templateData)
 // }
 
-// func MainHandler() http.Handler {
-// 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-// 		renderTemplate(w, "./templates/index.html", nil)
-// 	})
-// }
+func MainHandler() http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		renderTemplate(w, "./templates/index.html", nil)
+	})
+}
 
 // Template rendering function
 func RenderTemplate(w http.ResponseWriter, templateFile string, templateData interface{}) {
