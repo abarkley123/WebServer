@@ -1,6 +1,6 @@
 # WebServer
 
-This is a web-server designed to host my personal portfolio. It is written in Go with GopherJS, to reduce cognitive disonance by homogenising the programming language used on the front and back end.
+This is a web-server designed to host my personal portfolio. It is written in Go with GopherJS, to reduce cognitive disonance by homogenising the programming language used on the front and back end. In time, I intend to host this on the andrewbarkley.co.uk domain, upon completion of this project.
 
 A peek of the site: 
 ![alt text](https://github.com/abarkley123/WebServer/blob/master/static/images/screenshot.png "Screenshot of site")
