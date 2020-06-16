@@ -8,8 +8,15 @@ A peek of the site:
 
 ## Getting Started
 
-Since this site is built in Go, that means getting started should be realtively simple. First, you will need to get Go setup on your machine. Then, after cloning/forking/downloading, from the main directory you can run: (in macOs/linux) 
-> cd client && $GOBIN/gopherjs build && mv *.js* ../static/js && cd ../ && go run main.go
+Since this site is built in Go, that means getting started should be realtively simple. First, you will need to get Go setup on your machine. Then, after cloning/forking/downloading, from the main directory you can run: (in MacOS/linux) 
+
+```
+cd client
+$GOBIN/gopherjs build 
+mv *.js* ../static/js 
+cd ../ 
+go run main.go
+```
 
 The Index.html (the landing page of the webserver) defaults to use e.g http://localhost:8080, however you may change the port used in the main.go file.
 
@@ -34,7 +41,7 @@ In the case of the "WebAppRoot" variable, you may need to export a variable in y
 
 ## License
 
-This project is unlicensed, and you may use it freely - please give credit when doing so!
+This project is licensed under the MIT license - https://github.com/abarkley123/WebServer/blob/master/LICENSE
 
 ## Acknowledgments
 
